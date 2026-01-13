@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+ 
+
+}
+/* share css */
+body{
+    max-width: 1600px;
+    margin: auto;
+}
+header{
+    background: rgba(255, 144, 14, 0.1);
+    
+padding: 50px 240px 50px ;
+}
+.button{
+    background: #FF900E;
+    color: #ffffff;
+    font-weight: 600px;
+    padding: 21px 24px;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgb(82, 81, 81);
+    border: none;
+}
+
+/* navBar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+}
+nav h1{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    
+}
+nav li{
+
+    list-style: none;
+  margin-left: 50px;
+}
+nav a{
+    color: #424242;
+    text-decoration: none;
+    font-size: 18px;
+   
+
+}
+
+/* baner */
+.baner h1{
+    color: #000000;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-top: 102px;
+}
+.baner p{
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 2rem 0;
+
+}
+.baner{
+    text-align: center;
+}
+.baner button{
+    margin: 32px 0 50px;
+}
+.baner img{
+    width: 100%;
+}
+
+/* features quick */
+.features-main h1{
+    font-size: 3rem;
+}
+.quick{
+    color: #727272;
+}
+.of{
+    color: #131313;
+}
+.features{
+    color: #FF900E;
+}
+.features-main p{
+    font-size: 16px;
+    color: #727272;
+    margin: 24px 0 32px;
+
+}
+.features-main{
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin:85px 150px 130px;
+    
+}
+
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+  
+}
+.features-img img{
+   width: 100%;
+}
+
+
+/* phone device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+       
+    }
+    nav h1{
+font-size: 40px;
+margin-bottom: 20px;
+    }
+    nav ul{
+       
+        flex-direction: column;
+    }
+    nav li{
+        margin: 10px;
+    }
+    .baner h1{
+        font-size: 2rem;
+    }
+    .features-main{
+    flex-direction: column;
+    
+    margin:40px;
+    
+}
+.features-text{
+ text-align: center; 
+}
+.features-img{
+    
+    grid-template-columns: repeat(1,1fr);
+    gap: 24px;
+  
+}
+}
+
+/* laptop device */
+@media screen and (min-width:576px) and (max-width:1000px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+       
+    }
+    nav h1{
+
+margin-bottom: 20px;
+    }
+    .features-main{
+    flex-direction: column;
+    
+    margin:40px;
+    
+}
+   .features-text{
+ text-align: center; 
+} 
+
+}
